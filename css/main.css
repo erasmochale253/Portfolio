@@ -1,0 +1,117 @@
+html {
+  font-size: 13px;
+}
+
+body {
+  font-family: "Khmer", sans-serif;
+  color: rgba(14, 13, 5, 0.7490196078);
+  margin: 0;
+}
+body img {
+  max-width: 100%;
+  height: auto;
+}
+body h1 {
+  margin-top: 135px;
+}
+
+h1 {
+  font-size: 3.846rem;
+  font-family: "Kaisel Decol", serif;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.812rem;
+  }
+}
+
+h2 {
+  font-size: 3.077rem;
+  font-family: "Kaisel Decol", serif;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3.05rem;
+  }
+}
+
+h3 {
+  font-size: 2.462rem;
+  font-family: "Kaisel Decol", serif;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2.44rem;
+  }
+}
+
+h4 {
+  font-size: 1.923rem;
+  font-family: "Kaisel Decol", serif;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.95rem;
+  }
+}
+
+h5 {
+  font-size: 1.538rem;
+  font-family: "Kaisel Decol", serif;
+}
+@media (min-width: 768px) {
+  h5 {
+    font-size: 1.56rem;
+  }
+}
+
+h6 {
+  font-size: 1.231rem;
+  font-family: "Kaisel Decol", serif;
+}
+@media (min-width: 768px) {
+  h6 {
+    font-size: 1.25rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Khmer", sans-serif;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+small {
+  font-size: 0.8rem;
+  font-family: "Khmer", sans-serif;
+}
+@media (min-width: 768px) {
+  small {
+    font-size: 0.8rem;
+  }
+}
+
+.extra-small {
+  font-size: 0.615rem;
+  font-family: "Khmer", sans-serif;
+}
+@media (min-width: 768px) {
+  .extra-small {
+    font-size: 0.615rem;
+  }
+}
+
+#main-body {
+  padding: 5%;
+}
+
+#title-section h1 {
+  margin-bottom: 16px;
+}
+#title-section p {
+  margin-bottom: 16px;
+}/*# sourceMappingURL=main.css.map */

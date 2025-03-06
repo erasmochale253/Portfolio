@@ -1,0 +1,45 @@
+@import "variables";
+
+
+#contact-section{
+    p{
+        display: flex;
+        align-items: center;
+        gap: $side-spaces;
+    }
+}
+
+#faqs-section{
+    details{
+        margin: $top-space 0;
+        padding: $side-spaces;
+        border: 1px solid $text-color-1;
+        border-radius: 5px;
+        summary{
+            cursor: pointer;
+            font-size: $header6;
+            font-family: $font-family-title;
+            color: $text-color-1;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            &:hover{
+                color: $text-color-3;
+                .item-sign{
+                    color: $text-color-3;
+                }
+            }
+            .item-sign{
+                color: $text-color-1;
+            }
+        }
+        summary::-webkit-details-marker{
+            display: none;
+        }
+        p{
+            font-size: $paragraph;
+            font-family: $font-family-text;
+            color: $text-color-1;
+        }
+    }
+}

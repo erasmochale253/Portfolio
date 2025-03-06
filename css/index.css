@@ -1,0 +1,78 @@
+#hero {
+  position: relative;
+  z-index: 1;
+  height: 80vh;
+  padding: 22.5% 5% 12.5%;
+  background-color: #FED635;
+}
+#hero h1 {
+  width: 70%;
+  margin-top: 5%;
+}
+#hero #cat-btn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+#hero #cat-btn a {
+  text-decoration: none;
+}
+#hero #cat-btn button {
+  font-size: 1em;
+  padding: 1.6em 6.8em;
+  border-radius: var(--Corner-Full, 1000px);
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+#hero #cat-btn #contact-btn {
+  background-color: #121008;
+  color: #FED635;
+  border: 2px solid rgba(14, 13, 5, 0.7490196078);
+}
+#hero #cat-btn #contact-btn:hover {
+  background-color: rgba(14, 13, 5, 0.7490196078);
+  color: #FED635;
+  border: 2px solid #FED635;
+}
+#hero #cat-btn #contact-btn:active {
+  background-color: #FED635;
+  color: rgba(14, 13, 5, 0.7490196078);
+  border: 2px solid rgba(14, 13, 5, 0.7490196078);
+}
+#hero #cat-btn #my-work-btn {
+  background: none;
+  color: rgba(14, 13, 5, 0.7490196078);
+  border: 2px solid rgba(14, 13, 5, 0.7490196078);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
+}
+#hero #cat-btn #my-work-btn:hover {
+  background-color: rgba(14, 13, 5, 0.7490196078);
+  color: #FED635;
+  border: 2px solid #FED635;
+}
+#hero #cat-btn #my-work-btn:active {
+  background-color: #FED635;
+  color: rgba(14, 13, 5, 0.7490196078);
+  border: 2px solid rgba(14, 13, 5, 0.7490196078);
+}
+
+#owner-img {
+  position: relative;
+  width: 100%;
+}
+#owner-img #hipotenusa {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 150px;
+}
+#owner-img #hipotenusa polygon {
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.4));
+  fill: #FED635;
+}/*# sourceMappingURL=index.css.map */

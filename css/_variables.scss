@@ -1,0 +1,56 @@
+// Dependencies: _variables.scss
+
+//colors section
+$primary-color: #FED635;
+$secundary-color: #D5BA50;
+$tertiary-color: #AA9A5C;
+$quaternary-color: #80785B;
+$text-color-1: #121008;
+$text-color-2: #0E0D05BF;
+$text-color-3: #121008B2;
+$text-color-4: #12100880;
+$text-color-5: #12100840;
+$text-color-6: #12100826;
+
+// mobile typography section
+// base value: 13px Scale: 1.25
+$header1: 3.846rem;
+$header2: 3.077rem;
+$header3: 2.462rem;
+$header4: 1.923rem;
+$header5: 1.538rem;
+$header6: 1.231rem;
+$paragraph: 1rem;
+$small: 0.8rem;
+$extra-small: 0.615rem;
+
+// desktop typography section
+// base value: 16px Scale: 1.25
+$header1-desktop: 3.812rem;
+$header2-desktop: 3.05rem;
+$header3-desktop: 2.44rem;
+$header4-desktop: 1.95rem;
+$header5-desktop: 1.56rem;
+$header6-desktop: 1.25rem;
+$paragraph-desktop: 1rem;
+$small-desktop: 0.8rem;
+$extra-small-desktop: 0.615rem;
+
+// SPACE VARIABLES
+$side-spaces:5%;
+$top-space: 5%;
+$bottom-spaces: 5%;
+// font families
+$font-family-title: 'Kaisel Decol', serif;
+$font-family-text: 'Khmer', sans-serif;
+
+
+
+// Responsive typography mixin
+@mixin responsive-font-size($mobile-size, $desktop-size, $font-family: $font-family-title) {
+    font-size: $mobile-size;
+    font-family: $font-family;
+    @media (min-width: 768px) {
+        font-size: $desktop-size;
+    }
+}

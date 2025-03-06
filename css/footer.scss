@@ -1,0 +1,28 @@
+@import "variables";
+
+#footer{
+    text-align: center;
+    color: $text-color-2;
+    padding: 40px 0 40px;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 24px;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        }
+
+    }
+    a{
+        color: $text-color-2;
+        text-decoration: none;
+    }
+}

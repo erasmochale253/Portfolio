@@ -1,0 +1,92 @@
+.testimonials {
+  width: 100%;
+  position: relative;
+}
+.testimonials button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  background-color: rgba(128, 128, 128, 0.137);
+  color: rgba(14, 13, 5, 0.7490196078);
+  border: none;
+  padding: 8px 16px;
+  height: 100%;
+  width: 10%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.testimonials button:hover {
+  background-color: #FED635;
+}
+.testimonials .cont-2-testimonials {
+  max-width: 100%;
+  overflow: hidden;
+  /* Slide Navigation */
+  /* Highlight active dot */
+}
+.testimonials .cont-2-testimonials input[type=radio] {
+  display: none;
+}
+.testimonials .cont-2-testimonials .nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.testimonials .cont-2-testimonials .nav label {
+  width: 12px;
+  height: 12px;
+  background: gray;
+  border-radius: 50%;
+  margin: 0 8px;
+  cursor: pointer;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.4);
+}
+.testimonials .cont-2-testimonials #slide1:checked ~ .nav label:nth-child(1),
+.testimonials .cont-2-testimonials #slide2:checked ~ .nav label:nth-child(2),
+.testimonials .cont-2-testimonials #slide3:checked ~ .nav label:nth-child(3) {
+  background: #FED635;
+}
+.testimonials .cont-2-testimonials .testimonials-container::after {
+  content: ""; /* Add a visual duplicate */
+  flex: 0 0 0;
+}
+.testimonials .cont-2-testimonials .testimonials-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  transition: 0.5s all ease-in-out;
+}
+.testimonials .cont-2-testimonials .testimonials-container .testimonial {
+  min-width: 100%; /* Each slide takes full width */
+  transition: transform 1s ease; /* Smooth transition */
+  margin: 32px 0;
+}
+.testimonials .cont-2-testimonials .testimonials-container .testimonial .img-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.testimonials .cont-2-testimonials .testimonials-container .testimonial .img-container .testi-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonials .cont-2-testimonials .testimonials-container .testimonial p {
+  font-size: 1rem;
+  margin: 8px 0;
+  text-align: center;
+}
+.testimonials .cont-2-testimonials .testimonials-container .testimonial .testi-name {
+  font-size: 1.231rem;
+  font-weight: 500;
+}
+.testimonials .cont-2-testimonials .testimonials-container .testimonial .testi-profession {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+}/*# sourceMappingURL=testimonials.css.map */

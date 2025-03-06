@@ -1,0 +1,31 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-auto-rows: minmax(10px, 10px); /* Controls row height */
+    gap: 16px;
+
+    .work-container{
+        border-radius: 16px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    $spans: 10, 14, 16, 10, 13, 15, 11, 17, 12; // Add more as needed
+    @for $i from 1 through 9{
+        .work-container:nth-child(#{$i}){
+            grid-row-end: span nth($spans, $i);
+        }
+    }
+}
+
+#number-img{
+    display: none;
+}

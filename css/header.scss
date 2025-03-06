@@ -1,0 +1,91 @@
+@import "variables"; // Importing the variables file
+// Header
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: $primary-color;
+    color: $text-color-2;
+    padding: calc(100% - 95.154%) 5%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+#menu-bar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-humb{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+#close-btn{
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.close-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    background-color: $primary-color;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100svh;
+    margin: 0;
+    padding: 16px 16px;
+    z-index: 1;
+    transition: .2s all;
+    transform: translateX(-100%);
+    button{
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+.show{
+    transform: translateX(0);
+}
+#menu-bar nav{
+    margin-top: 40px;
+}
+#menu-bar nav ul{
+    padding: 0;
+    list-style: none;
+    li{
+        a{
+            height: 56px;
+            color: $text-color-2;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            &:hover{
+                background-color: $text-color-2;
+                color: $primary-color;
+                border-radius: 5px;
+                padding-left: 16px;
+                transition: .1s all ease-in-out;
+            }&:active{
+                background-color: $text-color-2;
+                color: $primary-color;
+            }
+        }
+    }
+}

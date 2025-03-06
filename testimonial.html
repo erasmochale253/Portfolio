@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/testimonials.css">
+</head>
+<body>
+    <header id="header">
+        <div id="menu-bar">
+
+            <!-- header elements -->
+        </div>
+    </header>
+    <main id="main-body">
+
+        <section id="title-section">
+            <h1>What Clients Say</h1>
+            <p>Here are some testimonies of former clients.</p>
+        </section>
+    
+        <section class="testimonials">
+            
+            <div class="cont-2-testimonials">
+                <input title="image 1" type="radio" name="carousel" id="slide1" checked>
+                <input title="image 2" type="radio" name="carousel" id="slide2">
+                <input title="image 3" type="radio" name="carousel" id="slide3">
+    
+                <!-- TEMPLATE CONTAINER -->
+                <div class="testimonials-container"></div>
+    
+                <div class="nav">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </div>
+        </section>
+    
+        <template class="testi-template">
+                <div class="testimonial">
+                    <div class="img-container">
+                        <img class="testi-img" src="./images/testimonial-1.jpg" alt="Testimonial 1">
+                    </div>
+                    <p class="testi-name">Name</p>
+                    <p class="testi-profession">Profession</p>
+                    <img class="quote" src="/img/quote.svg" alt="quote">
+                    <p class="testi-qoute">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec</p>
+                </div>
+        </template>
+    </main>
+    <footer id="footer">
+        <!-- footer elements -->
+    </footer>
+
+    <script type="text/javascript" src="./js/footer.js"></script>
+    <script type="text/javascript" src="./js/header.js"></script>
+    <script type="module" src="./js/testimonial.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

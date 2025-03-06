@@ -1,0 +1,38 @@
+#contact-section p {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+#faqs-section details {
+  margin: 5% 0;
+  padding: 5%;
+  border: 1px solid #121008;
+  border-radius: 5px;
+}
+#faqs-section details summary {
+  cursor: pointer;
+  font-size: 1.231rem;
+  font-family: "Kaisel Decol", serif;
+  color: #121008;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#faqs-section details summary:hover {
+  color: rgba(18, 16, 8, 0.6980392157);
+}
+#faqs-section details summary:hover .item-sign {
+  color: rgba(18, 16, 8, 0.6980392157);
+}
+#faqs-section details summary .item-sign {
+  color: #121008;
+}
+#faqs-section details summary::-webkit-details-marker {
+  display: none;
+}
+#faqs-section details p {
+  font-size: 1rem;
+  font-family: "Khmer", sans-serif;
+  color: #121008;
+}/*# sourceMappingURL=about.css.map */

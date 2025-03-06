@@ -1,0 +1,73 @@
+@import "variables";
+
+
+html{
+    font-size: 13px;
+}
+body {
+    font-family: $font-family-text;
+    color: $text-color-2;
+    margin: 0;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    h1{
+        margin-top: calc(79px + 56px);
+    }
+}
+
+// Usage example
+
+h1 {
+    @include responsive-font-size($header1, $header1-desktop);
+}
+
+h2 {
+    @include responsive-font-size($header2, $header2-desktop);
+}
+
+h3 {
+    @include responsive-font-size($header3, $header3-desktop);
+}
+
+h4 {
+    @include responsive-font-size($header4, $header4-desktop);
+}
+
+h5 {
+    @include responsive-font-size($header5, $header5-desktop);
+}
+
+h6 {
+    @include responsive-font-size($header6, $header6-desktop);
+}
+
+p {
+    @include responsive-font-size($paragraph, $paragraph-desktop, $font-family-text);
+}
+
+small {
+    @include responsive-font-size($small, $small-desktop, $font-family-text);
+}
+
+.extra-small {
+    @include responsive-font-size($extra-small, $extra-small-desktop, $font-family-text);
+}
+
+
+#main-body{
+    padding: $side-spaces;
+}
+
+
+// TITLE SECTION
+#title-section{
+    h1{
+        margin-bottom: 16px;
+    }
+    p{
+        margin-bottom: 16px;
+    }
+}
