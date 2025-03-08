@@ -11,6 +11,9 @@
         width: 70%;
         margin-top: $side-spaces;
     }
+    p{
+        display: none;
+    }
     #cat-btn{
         display: flex;
         flex-wrap: wrap;
@@ -65,7 +68,7 @@
     }
 }
 
-// HOME MAIN IMAGE
+// MAIN HOME IMAGE
 #owner-img{
     position: relative;
     width: 100%;
@@ -83,3 +86,57 @@
 }
 
 
+// DESKTOP CODE
+@media screen and (min-width: 1024px) {
+    
+    #main {
+        display: flex;
+        overflow: hidden;
+        align-items: stretch; /* Ensures all children match the tallest item */
+        
+        #hero {
+            flex: 1;
+            padding: 12.5% $side-spaces 12.5%;
+            height: 100vh;
+            box-shadow: 10px 96px 10px rgba(0, 0, 0, 0.2);
+            /* Remove height: fit-content; */
+            
+            h1 {
+                width: 100%;
+            }
+            
+            p {
+                display: block;
+            }
+            
+            #cat-btn {
+                margin-top: 10%;
+                
+                button {
+                    font-size: 1em;
+                    padding: 1em 5em;
+                }
+            }
+        }
+        
+        #owner-img {
+            flex: 1;
+            display: flex; /* Ensures inner content stretches */
+            #owner-pic {
+                width: 100%;
+                display: block;
+                max-width: 100%;
+            }
+            #owner-pic img {
+                width: 100%; /* Make the image fill the parent */
+                object-fit: cover; /* Fill the container */
+                height: 100%; /* Maintain the aspect ratio */
+                 display: block; /* Remove unwanted extra spacing */
+            }
+            
+            #hipotenusa {
+                height: 200px;
+            }
+        }
+    }
+}

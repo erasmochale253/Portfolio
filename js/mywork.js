@@ -7,7 +7,7 @@ function gallery() {
         const clone = template.content.cloneNode(true);
 
         // Use a class instead of an id to avoid conflicts
-        clone.querySelector(".img").src = `./img/${i}.jpg`;
+        clone.querySelector(".img").src = `./img/gallery/${i}-500.jpg`;
 
         // Append to the container
         document.getElementById("container").appendChild(clone);

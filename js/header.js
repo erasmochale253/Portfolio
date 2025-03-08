@@ -17,16 +17,28 @@ function headerTemplate(){
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="mywork.html">My Work</a></li>
-                        <li><a href="testimonial.html">Testimonials</a></li>
-                        <li><a href="about.html">About Me</a></li>
+                        <li>
+                            <a href="./index.html">HOME</a>
+                            <div class="bottom-line"></div>
+                        </li>
+                        <li>
+                            <a href="mywork.html">MY WORK</a>
+                            <div class="bottom-line"></div>
+                        </li>
+                        <li>
+                            <a href="testimonial.html">TESTIMONIALS</a>
+                            <div class="bottom-line"></div>
+                        </li>
+                        <li>
+                            <a href="about.html">ABOUT ME</a>
+                            <div class="bottom-line"></div>
+                        </li>
                     </ul>
                 </nav>
                 
             </div>
 
-            <a href="./index.html">
+            <a id="logo-home" href="./index.html">
                 <img src="./img/logo.svg" alt="logo">
              </a>
 

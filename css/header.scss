@@ -57,35 +57,104 @@
         border: none;
         cursor: pointer;
     }
+    nav{
+        margin-top: 40px;
+    }
+    nav ul{
+        padding: 0;
+        list-style: none;
+        li{
+            a{
+                height: 56px;
+                color: $text-color-2;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                font-weight: 600;
+            }
+            
+        }
+    }
 }
 .show{
     transform: translateX(0);
 }
-#menu-bar nav{
-    margin-top: 40px;
-}
-#menu-bar nav ul{
-    padding: 0;
-    list-style: none;
-    li{
-        a{
-            height: 56px;
-            color: $text-color-2;
-            text-decoration: none;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
+
+// DESKTOP CODES
+@media screen and (min-width: 1024px){
+    #header{
+        padding: 0;
+        height: 13%;
+    }
+    #menu-bar{
+        width: 100%;
+        height: 100%;
+    }
+   #logo-home{
+        display: none;
+   }
+   #menu-humb{
+        display: none;
+   }
+   .nav-menu{
+        background-color: transparent;
+        transform: translateX(0);
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 $side-spaces;
+        height: 100%;
+        // width: 100%;
+        nav{
+            margin: 0;
+            height: 100%;
+        }
+        nav ul{
             width: 100%;
-            &:hover{
-                background-color: $text-color-2;
-                color: $primary-color;
-                border-radius: 5px;
-                padding-left: 16px;
-                transition: .1s all ease-in-out;
-            }&:active{
-                background-color: $text-color-2;
-                color: $primary-color;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+            align-items: center;
+            height: 100%;
+            li{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                a{
+                    flex: 1;
+                    padding: 0 16px;
+                    // height: 97%;
+                }
+                .bottom-line{
+                    
+                    height: 4%;
+                    background-color: $text-color-2;
+                    width: 100%;
+                    margin: 0;
+                    transform: scaleX(0%);
+                    transition: .3s all ease-in-out;
+                }
+                &:hover{
+                    a{
+                        transition: .3s all ease-out;
+                        color: $text-color-4;
+                    }
+                }&:hover .bottom-line{
+                    transform: scaleX(100%);
+                }
+                &:active{
+                    background-color: $text-color-2;
+                    // a{
+                    //     color: $primary-color;
+                    // }
+                }
             }
         }
-    }
+        #close-btn{
+            display: none;
+        }
+   }
 }

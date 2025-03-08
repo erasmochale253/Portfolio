@@ -18,25 +18,34 @@
         </div>
         
     </header>
-    <section id="hero">
-        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-       <div id="cat-btn">
-            <a href="about.html">
-                <button  id="contact-btn" type="button">Contact</button>
-            </a>
-            <a href="mywork.html">
-                <button id="my-work-btn" type="button">My Work</button>
-            </a>
-       </div>
-    </section>
+    <main id="main">
 
-    <div id="owner-img">
-        <svg id="hipotenusa">
-            <polygon points="0,0 500,0 0,90"/>
-        </svg>
-        
-        <img src="./img/owner.jpg" alt="owner" srcset="">
-    </div>
+        <section id="hero">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+            <p>Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu.  </p>
+           <div id="cat-btn">
+                <a href="about.html">
+                    <button  id="contact-btn" type="button">Contact</button>
+                </a>
+                <a href="mywork.html">
+                    <button id="my-work-btn" type="button">My Work</button>
+                </a>
+           </div>
+        </section>
+    
+        <div id="owner-img">
+            <svg id="hipotenusa">
+                <polygon points="0,0 500,0 0,90"/>
+            </svg>
+            <picture id="owner-pic">
+                <source media="(min-width: 600px)" srcset="./img/owner1024.jpg">
+                <source media="(min-width: 1024px)" srcset="./img/owner1440.jpg">
+                <source media="(min-width: 1440px)" srcset="./img/owner3859.jpg">
+                <img src="./img/owner800.jpg" alt="owner" srcset="">
+            </picture>
+            
+        </div>
+    </main>
 
     <footer id="footer"><!-- footer template here!!!!! --></footer>
 

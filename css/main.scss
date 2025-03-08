@@ -71,3 +71,19 @@ small {
         margin-bottom: 16px;
     }
 }
+
+
+@media screen and (min-width: 1024px) {
+
+    html {
+        font-size: 16px;
+    }
+    #title-section{
+        h1{
+            margin-bottom: 32px;
+        }
+        p{
+            margin-bottom: 32px;
+        }
+    }
+}
