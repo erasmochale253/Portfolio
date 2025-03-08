@@ -12,7 +12,7 @@ function headerTemplate(){
                     </a>
                     </div>
                     <button id="close-btn" type="button">
-                        <img src="./img/_close.svg" alt="close">
+                        <img src="./img/close-1.svg" alt="close">
                     </button>
                 </div>
                 <nav>
