@@ -10,7 +10,7 @@
     background-color: $primary-color;
     color: $text-color-2;
     padding: calc(100% - 95.154%) 5%;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 #menu-bar{
     position: relative;
@@ -48,7 +48,7 @@
     top: 0;
     height: 100svh;
     margin: 0;
-    padding: 16px 16px;
+    padding: $side-spaces;
     z-index: 1;
     transition: .2s all;
     transform: translateX(-100%);

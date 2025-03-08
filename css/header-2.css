@@ -7,7 +7,7 @@
   background-color: #FED635;
   color: rgba(14, 13, 5, 0.7490196078);
   padding: 4.846% 5%;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 #menu-bar {
@@ -51,7 +51,7 @@
   top: 0;
   height: 100svh;
   margin: 0;
-  padding: 16px 16px;
+  padding: 5%;
   z-index: 1;
   transition: 0.2s all;
   transform: translateX(-100%);
@@ -72,21 +72,10 @@
   height: 56px;
   color: rgba(14, 13, 5, 0.7490196078);
   text-decoration: none;
-  font-weight: bold;
   display: flex;
   align-items: center;
   width: 100%;
-}
-.nav-menu nav ul li a:hover {
-  background-color: rgba(14, 13, 5, 0.7490196078);
-  color: #FED635;
-  border-radius: 5px;
-  padding-left: 16px;
-  transition: 0.1s all ease-in-out;
-}
-.nav-menu nav ul li a:active {
-  background-color: rgba(14, 13, 5, 0.7490196078);
-  color: #FED635;
+  font-weight: 600;
 }
 
 .show {
@@ -96,9 +85,11 @@
 @media screen and (min-width: 1024px) {
   #header {
     padding: 0;
-    position: fixed;
+    height: 13%;
+  }
+  #menu-bar {
     width: 100%;
-    font-size: 0.8rem;
+    height: 100%;
   }
   #logo-home {
     display: none;
@@ -114,15 +105,46 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-    height: auto;
+    height: 100%;
   }
   .nav-menu nav {
     margin: 0;
+    height: 100%;
   }
   .nav-menu nav ul {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    gap: 16px;
+    justify-content: space-evenly;
+    margin: 0;
+    align-items: center;
+    height: 100%;
+  }
+  .nav-menu nav ul li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-menu nav ul li a {
+    flex: 1;
+    padding: 0 16px;
+  }
+  .nav-menu nav ul li .bottom-line {
+    height: 4%;
+    background-color: rgba(14, 13, 5, 0.7490196078);
+    width: 100%;
+    margin: 0;
+    transform: scaleX(0%);
+    transition: 0.3s all ease-in-out;
+  }
+  .nav-menu nav ul li:hover a {
+    transition: 0.3s all ease-out;
+    color: rgba(18, 16, 8, 0.5019607843);
+  }
+  .nav-menu nav ul li:hover .bottom-line {
+    transform: scaleX(100%);
+  }
+  .nav-menu nav ul li:active {
+    background-color: rgba(14, 13, 5, 0.7490196078);
   }
   .nav-menu #close-btn {
     display: none;
@@ -130,17 +152,31 @@
 }
 #header {
   box-shadow: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 1024px) {
   #header {
-    background-color: none;
     padding: 0;
-    position: relative;
+    height: 13%;
     width: 55%;
-    font-size: 0.8rem;
+    box-shadow: none;
+    transition: 0.3s all ease-in-out;
   }
-  #header .nav-menu {
+  #menu-bar {
+    width: 100%;
+    height: 100%;
+  }
+  #logo-home {
+    display: none;
+  }
+  #menu-humb {
+    display: none;
+  }
+  .nav-menu {
     background-color: transparent;
     transform: translateX(0);
     position: absolute;
@@ -148,17 +184,48 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-    height: auto;
+    height: 100%;
   }
-  #header .nav-menu nav {
+  .nav-menu nav {
     margin: 0;
+    height: 100%;
   }
-  #header .nav-menu nav ul {
+  .nav-menu nav ul {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    gap: 16px;
+    justify-content: space-evenly;
+    margin: 0;
+    align-items: center;
+    height: 100%;
   }
-  #header .nav-menu #close-btn {
+  .nav-menu nav ul li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-menu nav ul li a {
+    flex: 1;
+    padding: 0 16px;
+  }
+  .nav-menu nav ul li .bottom-line {
+    height: 4%;
+    background-color: rgba(14, 13, 5, 0.7490196078);
+    width: 100%;
+    margin: 0;
+    transform: scaleX(0%);
+    transition: 0.3s all ease-in-out;
+  }
+  .nav-menu nav ul li:hover a {
+    transition: 0.3s all ease-out;
+    color: rgba(18, 16, 8, 0.5019607843);
+  }
+  .nav-menu nav ul li:hover .bottom-line {
+    transform: scaleX(100%);
+  }
+  .nav-menu nav ul li:active {
+    background-color: rgba(14, 13, 5, 0.7490196078);
+  }
+  .nav-menu #close-btn {
     display: none;
   }
 }/*# sourceMappingURL=header-2.css.map */

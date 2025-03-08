@@ -1,3 +1,47 @@
+#main-body #img-view {
+  position: fixed;
+  left: 0;
+  z-index: 10001;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9); /* Semi-transparent */
+  -webkit-backdrop-filter: blur(20px); /* Safari support */
+  backdrop-filter: blur(20px); /* Blurs the background */
+  transform: scale(0);
+  transition: 0.3s all ease-in-out;
+}
+#main-body #img-view #container-view {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#main-body #img-view #container-view-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main-body #img-view #container-view-2 img {
+  width: 100%;
+}
+#main-body #img-view .close {
+  width: 50px;
+  height: 50px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main-body #img-view .close img {
+  width: 100%;
+}
+
 #container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -10,6 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #container .work-container img {
   width: 100%;
@@ -45,6 +90,13 @@
   grid-row-end: span 12;
 }
 
-#number-img {
-  display: none;
+@media screen and (min-width: 520px) {
+  #main-body #img-view #container-view-2 {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #main-body #img-view #container-view-2 {
+    width: 30%;
+  }
 }/*# sourceMappingURL=mywork.css.map */

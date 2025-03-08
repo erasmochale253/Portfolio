@@ -10,7 +10,7 @@ function testimonial(){
 
     for(let i = 0; i < testiName.length; i++){
         const clone = testimonialTemplate.content.cloneNode(true);
-        clone.querySelector('.testi-img').src = `./img/testimonial-${i}.jpg`;
+        clone.querySelector('.testi-img').src = `./img/testimonials/testimonial-${i}.jpg`;
         clone.querySelector('.testi-name').textContent = `${testiName[i]}`;
         clone.querySelector('.testi-profession').textContent = `${testiProfession[i]}`;
         testimonialContainer.appendChild(clone);

@@ -7,7 +7,7 @@
   background-color: #FED635;
   color: rgba(14, 13, 5, 0.7490196078);
   padding: 4.846% 5%;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 #menu-bar {
@@ -51,7 +51,7 @@
   top: 0;
   height: 100svh;
   margin: 0;
-  padding: 16px 16px;
+  padding: 5%;
   z-index: 1;
   transition: 0.2s all;
   transform: translateX(-100%);
