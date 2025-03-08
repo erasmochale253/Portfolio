@@ -110,7 +110,7 @@ small {
 }
 
 #title-section h1 {
-  margin-bottom: 16px;
+  margin-bottom: 10%;
 }
 #title-section p {
   margin-bottom: 16px;
@@ -121,7 +121,7 @@ small {
     font-size: 16px;
   }
   #title-section h1 {
-    margin-bottom: 32px;
+    margin: 15% 0 8%;
   }
   #title-section p {
     margin-bottom: 32px;

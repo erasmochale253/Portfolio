@@ -86,7 +86,24 @@
   font-weight: 500;
 }
 .testimonials .cont-2-testimonials .testimonials-container .testimonial .testi-profession {
+  margin-bottom: 10%;
   font-size: 1rem;
   font-style: italic;
   font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials .cont-2-testimonials {
+    width: 58%;
+    margin: 0 auto;
+  }
+  .testimonials .cont-2-testimonials .testimonials-container .testimonial .img-container {
+    width: 250px;
+    height: 250px;
+  }
+  .testimonials .cont-2-testimonials .testimonials-container .testimonial .img-container .testi-img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=testimonials.css.map */

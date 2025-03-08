@@ -90,6 +90,7 @@
                     font-weight: 500;
                 }
                 .testi-profession{
+                    margin-bottom: 10%;
                     font-size: $paragraph;
                     font-style: italic;
                     font-weight: 500;
@@ -100,3 +101,25 @@
     
 }
 
+@media screen and (min-width: 1024px){
+    .testimonials{
+
+        .cont-2-testimonials{
+            width: 58%;
+            margin: 0 auto;
+            .testimonials-container{
+        
+                .testimonial{
+                    .img-container{
+                        width: 250px;
+                        height: 250px;
+                        .testi-img{
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,12 +6,14 @@ function testimonial(){
 
     const testiName = [' Marcio Delgar', ' Pedro De Asis', 'Claudia Margalhas'];
     const testiProfession = ['Architeture', 'Web Designer', 'Web Developer'];
+    const quotes = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec", "Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu.", "Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu."]
 
 
     for(let i = 0; i < testiName.length; i++){
         const clone = testimonialTemplate.content.cloneNode(true);
         clone.querySelector('.testi-img').src = `./img/testimonials/testimonial-${i}.jpg`;
         clone.querySelector('.testi-name').textContent = `${testiName[i]}`;
+        clone.querySelector('.testi-qoute').textContent = `${quotes[i]}`;
         clone.querySelector('.testi-profession').textContent = `${testiProfession[i]}`;
         testimonialContainer.appendChild(clone);
     }
